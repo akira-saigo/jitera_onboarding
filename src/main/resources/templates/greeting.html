@@ -5,7 +5,16 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-    <p th:text="|HelloEveryone, ${name}!|" />
-    <p th:text="|${nowdate}|" />
+    <style>
+        .red-border {
+            border: 2px solid red;
+            padding: 10px;
+        }
+    </style>
+
+    <div class="red-border">
+        <p th:text="|HelloEveryone, ${name}!|" />
+        <p th:text="|${nowdate}|" />
+    </div>
 </body>
 </html>
